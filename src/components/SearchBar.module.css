@@ -1,0 +1,47 @@
+.form {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 16px;
+  font: inherit;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+/* Red border + message when the search can't run */
+.input.invalid {
+  border-color: var(--danger);
+}
+
+.input.invalid:focus {
+  outline-color: var(--danger);
+}
+
+/* .wrap .error (two classes) so the page's own paragraph styles can't
+   turn the message grey */
+.wrap .error {
+  margin: 0;
+  padding-left: 16px;
+  color: var(--danger);
+  font-size: 0.875rem;
+  font-weight: 500;
+}

@@ -1,0 +1,38 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 16px 0 24px;
+}
+
+.label {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.select {
+  padding: 8px 12px;
+  font: inherit;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.clear {
+  margin-left: auto;
+}
+
+/* Phone width: filters stack full width (Figure 5) */
+@media (max-width: 640px) {
+  .bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .clear {
+    margin-left: 0;
+    justify-content: center;
+  }
+}

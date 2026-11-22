@@ -1,0 +1,61 @@
+.headerActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Empty second column when only one product is pinned */
+.slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 32px 16px;
+  text-align: center;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  min-height: 240px;
+}
+
+.slotTitle {
+  margin: 0;
+  font-weight: 600;
+}
+
+.slotText {
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+
+.verdict {
+  margin-top: 20px;
+  padding: 14px 18px;
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  color: var(--accent);
+  text-align: center;
+}
+
+/* Phone width: the two columns stack */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.limitNote {
+  margin: 8px 0 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.limitNote a {
+  text-decoration: underline;
+}

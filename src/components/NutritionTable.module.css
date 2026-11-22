@@ -1,0 +1,62 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.caption {
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.table th,
+.table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.table th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.table td {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.missing {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.better {
+  background: var(--accent-soft);
+}
+
+.better td {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.tick {
+  font-weight: 700;
+}
+
+/* Value is above the user's own limit (My limits page) */
+.over {
+  background: #fbecea;
+}
+
+.over td {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.overTag {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+}

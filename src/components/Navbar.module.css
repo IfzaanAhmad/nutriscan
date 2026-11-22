@@ -1,0 +1,96 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  display: block;
+  height: 56px;
+  width: auto;
+}
+
+.links {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.link:hover {
+  color: var(--text);
+}
+
+.active {
+  background: var(--accent-soft);
+  color: #25653f; /* darker than --accent so it passes 4.5:1 on the pale green */
+}
+
+.badge {
+  font-size: 0.75rem;
+  background: var(--border);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 1px 7px;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  padding: 4px;
+}
+
+/* Phone width: links collapse behind the hamburger */
+@media (max-width: 640px) {
+
+  .logoImg {
+    height: 44px;
+  }
+  
+  .menuButton {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 16px 16px;
+  }
+
+  .links.open {
+    display: flex;
+  }
+}

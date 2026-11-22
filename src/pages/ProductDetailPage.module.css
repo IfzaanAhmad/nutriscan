@@ -1,0 +1,103 @@
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  margin: 20px 0 24px;
+  align-items: start;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.brand {
+  margin: 0;
+  color: var(--muted);
+}
+
+.keyStats {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.keyStats > div {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+@media (max-width: 760px) {
+  .layout,
+  .panels {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stateWrap {
+  margin-top: 20px;
+}
+
+.source {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.source a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* The product name uses the shared .page-title size; the summary's own
+   gap already spaces it, so no extra margin here */
+.summary h1 {
+  margin-bottom: 0;
+}
+
+/* Shown under the nutrition table when a value is above the user's limit */
+.limitNote {
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.limitNote a {
+  text-decoration: underline;
+}

@@ -1,0 +1,33 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.sm {
+  font-size: 0.75rem;
+  padding: 3px 9px;
+}
+
+.md {
+  font-size: 0.85rem;
+  padding: 5px 12px;
+}
+
+/* Official Nutri-Score colours. B and D use dark text and E a slightly
+   darker red so every badge passes WCAG AA contrast (4.5:1). */
+.gradeA { background: #038141; }
+.gradeB { background: #85bb2f; color: #1f2a1f; }
+.gradeC { background: #fecb02; color: #3a2e00; }
+.gradeD { background: #ee8100; color: #1f2a1f; }
+.gradeE { background: #c4360c; }
+.unknown { background: #9aa29a; color: #1f2a1f; }
+
+.info {
+  cursor: help;
+  font-weight: 400;
+}

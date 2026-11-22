@@ -1,0 +1,32 @@
+.box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.heading {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.box p {
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.missing {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.allergens {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #fdf1e7;
+  color: #8a3d00;
+  font-size: 0.9rem;
+}
